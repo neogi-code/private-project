@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LINUX WEB LOGIN</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="./js/login.js"></script>
+<style>
+#main {
+	width: 400px;
+	border:1px solid lightgrey;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 5px;
+	text-align: center;
+}
+
+#middle {
+        width: 400px;
+        border:1px solid lightgrey;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+        text-align: center;
+}
+
+</style>
+</head>
+<body>
+	<div id="main">
+	<p class="top"> 
+	<h2>LOGIN</h2>
+
+	</p>
+	</div>
+	
+	<div id="middle">
+		<form name="login_form" method="post" action="login.php">
+			<p>
+			LINUX ID<br />
+			<input type="text" id="username" name="username" placeholder="ID"></p>
+			<p>
+			LINUX PASSWORD<br />
+			<input type="password" id="pass" name="pass" placeholder="PWD"></p>
+			<p>
+			<a href="#"><font color="#666" onclick="check_input()">LOGIN</font></a>
+		</form>
+	</div>
+
+</body>
+</html>
