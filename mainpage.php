@@ -17,12 +17,6 @@ if(!$userid){
        ");
 
 }
-else
-{
-echo "{$userid}님 반갑습니다<br>";
-echo "정상적으로 로그인되었습니다<br />";
-echo "이제 여기에 필요한 페이지를 만드세요<br />";
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +37,12 @@ echo "이제 여기에 필요한 페이지를 만드세요<br />";
 				$sql = "select * from test"; //db에 전달할 명령어
 				$result = mysqli_query($con,$sql); //db,명령어 순으로 값이 들어가며 db에 명령어를 전달함.
 
-				//$ns = shell_exec("");
+				// $ns = shell_exec("");
+				if($con){
+					echo "test";
+				}else{
+					echo "fail";
+				}
 			?>
 		</select>
 	</form>
