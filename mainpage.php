@@ -33,7 +33,7 @@ if(!$userid){
 	<form action="manage.php" name="serch" method="post">
 		<select name="namespace" id="">
 			<?php
-				$con = mysqli_connect("localhost","root","12345","test"); //데이터베이스 정보. 주소,db계정,db패스워드,db명 순으로 작성
+				$con = mysqli_connect("211.183.3.170","root","test123","test"); //데이터베이스 정보. 주소,db계정,db패스워드,db명 순으로 작성
 				$sql = "select * from test"; //db에 전달할 명령어
 				$result = mysqli_query($con,$sql); //db,명령어 순으로 값이 들어가며 db에 명령어를 전달함.
 
